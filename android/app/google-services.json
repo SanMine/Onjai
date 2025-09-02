@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "119107230281",
+    "project_id": "newoonjai",
+    "storage_bucket": "newoonjai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119107230281:android:c7997690f958e3234fbd98",
+        "android_client_info": {
+          "package_name": "com.example.oonjai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-J5P3uq4Eo0GLJPnmvkeUIbNPNTQDf4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
