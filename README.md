@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Oonjai (อุ่นใจ — “Warm Heart”)
 
 A **Flutter + Firebase health management application** inspired by the principles of **Thai traditional medicine**, focusing on balancing the **four elements** — Earth, Water, Wind, and Fire.
