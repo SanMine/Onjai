@@ -19,7 +19,9 @@ void main() async {
 
 /// Main application widget for Oonjai
 class OonjaiApp extends StatelessWidget {
-  const OonjaiApp({super.key});
+  final Widget? testChild;
+  
+  const OonjaiApp({super.key, this.testChild});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class OonjaiApp extends StatelessWidget {
       // Use the new app theme
       theme: AppTheme.lightTheme,
       
-      home: const AuthWrapper(),
+      home: testChild ?? const AuthWrapper(),
     );
   }
 }

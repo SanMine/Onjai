@@ -7,15 +7,21 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:oonjai/main.dart';
 
 void main() {
   testWidgets('Oonjai app smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const OonjaiApp());
+    // Build our app with a test child to avoid Firebase dependencies
+    await tester.pumpWidget(const OonjaiApp(
+      testChild: Scaffold(
+        body: Center(
+          child: Text('Test Home'),
+        ),
+      ),
+    ));
 
     // Verify that the app loads without errors
     expect(find.byType(MaterialApp), findsOneWidget);
+    expect(find.text('Test Home'), findsOneWidget);
   });
 }
